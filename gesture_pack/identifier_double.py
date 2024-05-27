@@ -29,7 +29,6 @@ def run_identifier(storage: SignalStorage, cap):
       left_frame = frame[:, :width//2]
       right_frame = frame[:, width//2:]
 
-      # Mirror the left and right frames
       left_frame = cv2.flip(left_frame, 1)
       right_frame = cv2.flip(right_frame, 1)
 
